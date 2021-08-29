@@ -12,8 +12,7 @@ arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
 pkgdesc='Code generator for serializing/deserializing C++ objects to/from JSON using Clang and RapidJSON'
 license=('GPL')
 depends=('c++utilities' 'rapidjson' "llvm-libs>=${_llvmver}.0.0" "llvm-libs<$((_llvmver + 1)).0.0" 'clang')
-optdepends=("boost: use Boost.Hana instead of code generator"
-            "$pkgname-doc: API documentation")
+optdepends=("boost: use Boost.Hana instead of code generator")
 makedepends=('cmake' 'ninja' 'clang-tools-extra' 'llvm')
 checkdepends=('cppunit' 'boost')
 url="https://github.com/Martchus/${_reponame}"
